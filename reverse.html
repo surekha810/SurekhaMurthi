@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reverse</title>
+</head>
+<body>
+Enter a number to check:
+<input type="text" name="reverse" id="reverse" autofocus="on" onchange="reverse()">
+<script type="text/javascript">
+	function reverse() {
+		// body...
+		var x=document.getElementById('reverse').value;
+		var temp,temp1=0;
+		temp=x;
+		var count=0,a;
+		do{
+			temp=Math.floor(temp/10);
+			count++;
+			}while(temp>0)
+		temp=x;
+		for (var i = 0; i < count; i++) {
+			y=x%10;
+			x=Math.floor(x/10);
+			if(i==0)
+				temp1=y;
+			else
+				temp1=(temp1*10)+y;
+			}
+		alert("the given number in reverse is : " + temp1);
+
+		}
+
+</script>
+</body>
+</html>

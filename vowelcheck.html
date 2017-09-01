@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vowel checking</title>
+</head>
+<body>
+Enter a character:
+<input type="text" name="char" id="char1" onchange="vowelcheck()">
+<script type="text/javascript">
+	function vowelcheck() {
+		var char1=document.getElementById('char1').value;
+		//alert(char1);
+		if((char1=='a' )||(char1=='e')||(char1=='i')||(char1=='o')||(char1=='u')) {
+			alert("you entered a vowel");
+		}
+		else
+			alert("you entered a consonent");
+		// body...
+	};
+</script>
+</body>
+</html>
