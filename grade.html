@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>grade</title>
+	<style type="text/css">
+		table{
+			border-collapse: collapse;
+			 border: 5px #E8F8F5;
+    border-style: groove;
+    text-align: left;
+    margin-left: 500px;
+    margin-top: 100px;
+    padding-top: 10px;
+    height: 1px;
+    width: 400px;
+		}
+	</style>
+</head>
+<body>
+<table border="1">
+	<tr>
+		<td>Enter student name:</td>
+		<td><input type="text" name="stdname" id="stdname" autofocus="on"></td>
+	</tr>
+	<tr>
+		<td>enter the student marks</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Enter the marks for Chemistry</td>
+		<td><input type="text" name="chem" id="chem"></td>
+	</tr>
+	<tr>
+		<td>Enter the marks for Physics</td>
+		<td><input type="text" name="phy" id="phy"></td>
+	</tr>
+	<tr>
+		<td>Enter the marks for Maths</td>
+		<td><input type="text" name="maths" id="maths"></td>
+	</tr>
+	
+</table>
+	<center><button type="button" onclick="calculate()">Submit</button></center>
+<script type="text/javascript">
+	function calculate() {
+		// body...
+		//document.write("Hello");
+		 var stdname=document.getElementById('stdname').value;
+		 var chem=Number(document.getElementById("chem").value);
+		 var phy= Number(document.getElementById("phy").value);
+		 var maths=Number(document.getElementById("maths").value);
+		  var avg=(chem+phy+maths)/3;
+		 //alert(avg);
+		 if((chem<35)||(phy<35)||(maths<35)||(avg<35))
+		  {
+		  	alert(stdname +" is failed");
+		  } else {
+		  	alert(stdname +" with average of " +avg+"% passed" );
+		    var grade;
+		if (avg>=80) {
+			grade='A+';
+			alert(stdname +" with average of " + avg + "grade is " + grade) ;
+		} else if((avg <80) &&(avg >=60)){
+			grade='A';
+			alert(stdname +" with average of " + avg + "grade is " + grade) ;
+		}
+		else if((avg <60) && (avg>=35)){
+			grade="B";
+			alert(stdname +" with average of " + avg + "grade is " + grade) ;
+		}else{
+			alert(stdname +" with average of " + avg + "grade is failed") ;
+		}
+	}
+	}
+</script>
+</body>
+</html>
