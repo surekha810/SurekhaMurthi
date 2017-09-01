@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>distance calculator</title>
+</head>
+<body>
+<div id="calculate">
+Enter the Distance:
+<input type="text" name="dist" id="dist">
+<button type="button" value="submit" onclick="distcalculate()">submit</button>
+
+
+
+
+<script type="text/javascript">
+	function distcalculate()
+	{
+		var distance=document.getElementById("dist").value;
+		alert("distance is "+ distance);
+		var cms=distance*100000;
+		var ms=distance*1000;
+		var feets=distance*3280.84;
+		alert("cms conversion "+cms);
+		alert(" meters conversion "+ms);
+		alert("feets conversion"+ feets);
+	};
+
+</script>
+</div>
+</body>
+</html>
