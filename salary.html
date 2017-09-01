@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>Calculation of Salary</title>
+</head>
+<body>
+		<center><div id="demo">
+    <label><b>Enter your salary:</b></label>
+    <input type="text" id="salary" placeholder="Enter ur Salary" autofocus="on">
+  	<button type="button" onclick="salCalc()">Calculate</button>
+</div>		
+</center>
+	<script type="text/javascript">
+		var pf,ma,hra,da,cst;
+		function salCalc()
+		{	
+
+			var salary=document.getElementById("salary").value;
+			 pf=(salary*5)/100;
+			 ma=(salary*5)/100;
+			 hra=(salary*10)/100;
+			 da=(salary*20)/100;
+			 cst=(salary*18)/100;
+			document.write("pf is " +pf) ;
+			document.write("\n\n\n");
+			document.write("MA is " + ma);
+			document.write("\n\n\n");
+			document.write("HRA is " + hra);
+			document.write("\n\n\n");
+			document.write("DA is " + da);
+			document.write("\n\n\n");
+			document.write("CST is " + cst);
+			document.write("\n\n\n");
+			var gross;
+			gross=(Number(salary)+Number(pf)+Number(ma)+Number(hra)+Number(da));			
+			alert("gross salary is" + gross);
+
+		};
+	</script>
+</body>
+</html>
