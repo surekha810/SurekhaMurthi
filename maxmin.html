@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Maximum and Minimum</title>
+</head>
+<body>
+<script type="text/javascript">
+	function MaxMin() {
+		// body...
+		alert("Enter 5 numbers to find out Minimum and Maximum numbers");
+		var num1=Number(prompt("Enter First Number"));
+		var min=max=num1;
+		for (var i = 0; i < 4; i++) {
+			num=Number(prompt("Enter another number"));
+			if(max<num)
+			{
+				max=num;
+			}else if(min>num)
+			{
+				min=num;
+			}
+
+		}
+		alert("The maximum number in given numbers are" +max);
+			alert("The Minimum number in given numbers are" +min);
+
+	}
+	MaxMin();
+</script>
+</body>
+</html>

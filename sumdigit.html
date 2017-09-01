@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sum of all digits</title>
+</head>
+<body>
+enter the number to find sum of all digits
+<input type="text" name="addition" id="addition" onchange="sumdigit()">
+<script type="text/javascript">
+	function sumdigit() {
+		// body...
+		var x=document.getElementById('addition').value;
+		var y,z=0;
+		for (var i = 0; i < 5; i++) {
+			y=x%10;
+			x=Math.floor(x/10);
+			z=z+y;
+		}
+		alert("the sum of all digits in given number is "+z);
+	}
+</script>
+</body>
+</html>

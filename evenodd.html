@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>even/odd</title>
+</head>
+<body>
+ Enter number:
+ <input type="text" name="number" id="number" onchange="check()">
+
+<script type="text/javascript">
+	function check() {
+
+		 var numb=document.getElementById("number").value;
+		 //var ans=numb%2;
+		if( numb%2 ==0)
+		{
+			alert("you entered even");
+		}
+		else
+		{
+			alert("you entered odd");
+		}
+		// body...
+	}
+</script>
+
+</body>
+</html>

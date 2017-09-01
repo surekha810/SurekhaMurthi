@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pallindrome</title>
+</head>
+<body>
+Enter a number to check:
+<input type="text" name="pall" id="pall" autofocus="on" onchange="Pallindrome()">
+<script type="text/javascript">
+	function Pallindrome() {
+		// body...
+		var x=document.getElementById('pall').value;
+		var temp,temp1=0;
+		temp=x;
+		var count=0,a;
+		do{
+			temp=Math.floor(temp/10);
+			count++;
+			}while(temp>0)
+		temp=x;
+		for (var i = 0; i < count; i++) {
+			y=x%10;
+			x=Math.floor(x/10);
+			if(i==0)
+				temp1=y;
+			else
+				temp1=(temp1*10)+y;
+			}
+		if(temp1==temp)
+			alert("given number is Pallindrome")
+		else
+			alert("given number is not a Pallindrome")
+
+		}
+
+</script>
+</body>
+</html>

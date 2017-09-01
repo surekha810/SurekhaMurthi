@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>area of a circle and rectangle</title>
+</head>
+<body>
+<div>
+	Enter radius of a cirlce:
+	<input type="text" name="radius" id="radius"><br>
+	Enter width of a rectangle:
+	<input type="text" name="width1" id="width1"><br>
+	Enter height of a rectangle:
+	<input type="text" name="height1" id="height1"><br>
+	<button type="button" onclick="calculate()">Submit</button>
+</div>
+<script type="text/javascript">
+	function calculate()
+	{
+		var radius =document.getElementById("radius").value;
+		alert("radius is "+radius);
+		var area= Math.PI*radius*radius;
+		alert("area of cirlce is "+ area);
+		var width1=document.getElementById("width1").value;
+		var height1=document.getElementById("height1").value;
+		area=width1*height1;
+		alert("area of a rectangle is" +area);
+	};
+	</script>
+</body>
+</html>
