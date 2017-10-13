@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flipkart Brand</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css"> -->
+<!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<!-- <link href="css/bootstrap.css" rel="stylesheet"> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<style type="text/css">
+		.navbar{
+			background-color: #3852F4;
+			height: 100px;
+			padding-right: 50px;
+			padding-left: 50px;	
+		}
+
+	.navbar-form{
+		padding-left: 200px;
+	}
+	.btn-primary{
+		top: -50px;
+		left: 800px;
+		position: relative;
+	}
+
+
+		
+	</style>
+</head>
+<body>
+<header>
+	<section>
+		<article>
+			<nav class="navbar navbar-inverse">
+			  <div class="container-fluid">
+    			<div class="navbar-header">
+      			<a class="navbar-brand" href="#" style="color:white;"><h1>Brand</h1></a>
+    			</div>
+    			<ul class="nav navbar-nav navbar-right">
+      			<li><a href="#" style="color:white;">Link 1</a></li>
+      			<li><a href="#" style="color:white;">Link 2</a></li>
+      			<li><a href="#" style="color:white;">Link 3</a></li>
+      			<li><a href="#" style="color:white;">Link 4</a></li>
+      			<li><a href="#" style="color:white;">Link 5</a></li>
+      			<li><a href="#" style="color:white;">Link 6</a></li>
+      			<li><a href="#" style="color:white;"><i class="fa fa-bell-o" aria-hidden="true"></i></a></li>
+      			<li class="dropdown">
+      				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown </a>
+              			<ul class="dropdown-menu">
+                			<li><a href="#">Link</a></li>
+                			<li><a href="#">Link</a></li>
+                			<li><a href="#">Link</a></li>
+                			<li><a href="#">Link</a></li>
+                			<li><a href="#">Link</a></li>
+              			</ul>
+            	</li>
+      			</ul>
+  			</div>
+  
+  			<div class="col-sm-12 col-md-12">
+        		<form class="navbar-form" role="search">
+        		<div class="input-group">
+            		<input type="text" class="form-control" placeholder="Search" name="q">
+            		<div class="input-group-btn">
+                		<button class="btn btn-default" type="submit" style="background-color: yellow;"><i class="glyphicon glyphicon-search"></i></button>
+            		</div>
+        		</div>
+        		</form>
+    		
+    			<button type="button" class="btn btn-primary">
+    				<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+    				Link <span class="item-number ">0</span>
+    			</button>
+    		</div>
+    		
+    		
+			</nav>
+			
+    
+		</article>
+	</section>
+</header>
+<script type="text/javascript">
+	$('ul.nav li.dropdown').hover(function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+}, function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+});
+</script>
+</body>
+</html>

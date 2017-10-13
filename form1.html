@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form1</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    		@media screen and (min-width: 760px){
+       			body{
+       				color: black;
+       			}
+       	  		.container1{
+       		display: flex;
+       		
+       	}
+       			.article2{
+       				display: flex;
+       			}
+       		}
+       	.container1{
+  		flex-basis: 10%;  		
+  		}
+  		.article2{
+  		flex-basis: 50%;
+  		} 
+  		.article1 {
+  		border-width: medium;
+  		margin-top: 50px;
+  		padding-left: 150px;
+   		border : 2px solid black;
+  		margin-left: 200px;
+  		margin-right: 200px;
+  		text-align: center;
+  		font: bold;
+  		padding-right: 100px;
+  	}
+  	.article2{
+  		border: 2px solid black;
+  		 border-width: medium;
+  		 margin-left: 250px;
+  		 margin-right: 300px;
+  		 padding-left: 50px;
+  		margin-top: 10px;   		
+  		font: bold;
+  		padding-right: 700px;
+  		padding-top: 70px;
+  		position: relative;  		
+  	}
+  	.signup{
+  		 border: 2px solid black;
+  		 border-width: medium;
+  		 margin-left: 250px;
+  		 margin-right: 100px;
+  		 padding-left: 50px;
+  		 padding-right: 700px;
+  		 position: fixed;
+  	}
+  	.article2{
+  		flex-basis: 50%;
+  	}
+   	.row{
+  		margin-left: 10px;
+  	}
+  	.btn{
+  		border-radius: 10px;
+  		width: 200px;
+  		border: 3px solid black;
+  		margin-left:200px;
+  	}
+  	.inputtext{
+  		border:3px solid black;
+  		padding-left: 100px;
+  		margin-left: 200px;
+  		margin-top: 10px;
+  	}
+  	label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 100px;
+    /*text-align: right;*/
+}
+input {
+  display: inline-block;
+  float: left;
+}
+
+  </style>
+</head>
+<body>
+<header>
+	<section>
+		<article class="article1">
+			<div class="container1">
+				<h5><b>Home</b></h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<h5><b>Sign Up </b></h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<h5><b>Login </b></h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<h5><b> Post Link </b></h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<h5><b>Post Blog</b></h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<h5><b>Welcome</b></h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<h5><b>Log Out</b></h5>
+				
+			</div>
+		</article>
+		<article>
+			<div class="signup">
+				<h5><b>Sign Up<b></h5>
+			</div>
+		<article class="article2">
+			<div class="signupform">
+				<div class="container">
+					<div class="row">
+					<form>
+            		<fieldset >
+               			<label><b>Name </b></label><input type="text" id="name" name="name" class="inputtext"> <br><br>
+                		<label><b> Email</b> </label><input type="text" id="email" name="email" class="inputtext"><br><br>
+                		<label><b> Password </label></b><input type="text" id="email" name="email" class="inputtext"><br><br>
+                		<label><b> Mobile</b> </label><input type="text" id="email" name="email" class="inputtext"><br><br>
+                		<label><b> Address</b></label> <textarea rows="3" id="description" name="description" class="inputtext">
+                			
+                		</textarea> <br><br>
+                		<button type="button" class="btn btn-default" ><b>Register</b></button>
+            		</fieldset>
+        			</form>
+					</div>
+				</div>
+			</div>
+		</article>
+	</article>
+	</section>
+</header>
+</body>
+</html>
