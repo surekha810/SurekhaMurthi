@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <link rel='stylesheet' href='bower_components/glyphicons-only-bootstrap/css/bootstrap.min.css' />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"   rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <title>SF/ARTS</title>
+  <style type="text/css">
+.navbar-fixed-left {
+  width: 60px;
+  position: fixed;
+  border-radius: 0;
+  height: 100%;
+  background:#2A3CEA;
+}
+  .navbar-fixed-left: hover {
+    background: green;
+    }
+
+.navbar-fixed-left .navbar-nav > li {
+  float: none;  /* Cancel default li float: left */
+  width: 39px;
+    background-color:  #2A3CEA; /*blue*/
+}
+  .imgcor{
+    width: 25%;
+    height: 100%;
+    padding-left: 40px;
+    position: fixed;
+    z-index: -1;
+  }
+.vertical-text {
+  /*transform: rotate(270deg);
+  transform-origin: left bottom 0;*/
+  /*-ms-transform-origin: left bottom 0 *//* IE 9 */
+   /*-webkit-transform-origin: left bottom 0*/ /* Chrome, Safari, Opera */
+    /*transform-origin: left bottom 0;*/
+    /*left: 10px;*/
+    /*-ms-transform: rotate(270deg);*/
+    -webkit-transform: rotate(270deg);
+    /*transform: rotate(270deg);*/
+    text-align: left;
+}
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+     margin-top: -60px;
+  margin-left: 60px;
+  list-style-type:none;
+  
+}
+
+.dropdown {
+    position: absolute;
+    display: inline-block;
+    background-color: #2A3CEA;
+    z-index: 999;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:  #2A3CEA;
+  
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+}
+
+.dropdown-content :hover {background-color:  #2A3CEA ;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color:  #2A3CEA; /*blue*/
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;  /*green*/
+}
+
+/*image corousel css*/
+
+#myCarousel .carousel-caption {
+    left:0;
+  right:0;
+  bottom:0;
+  top: 0;
+  text-align:left;
+  padding:10px;
+  background:rgba(0,0,0,0.6);
+  text-shadow:none;
+  
+
+}
+
+#myCarousel .list-group {
+  position:absolute;
+  top:0;
+  right:0;
+}
+#myCarousel .list-group-item {
+  border-radius:0px;
+  cursor:pointer;
+}
+#myCarousel .list-group .active {
+  background-color:#eee;  
+}
+
+@media (min-width: 992px) { 
+  #myCarousel {
+    padding-right:50.3333%;
+    margin-left: -45px;
+  }
+  #myCarousel .carousel-controls {display:none;}  
+}
+@media (max-width: 991px) { 
+  .carousel-caption p,
+  #myCarousel .list-group {display:none;} 
+}
+
+/* slider navigation bar*/
+  .slider{
+    margin-left: 500px;
+    margin-top: 0;
+
+      }
+  .navbar-collapse{
+    background: green;
+
+  }
+  .navbar-collapse li:hover{
+    background:#ffffff;
+    border-radius: 25px;
+    
+      }
+  /* make sidebar nav vertical */ 
+@media (min-width: 768px) {
+  .sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    max-height: none;
+  }
+  .sidebar-nav .navbar ul {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+  .row li a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+      color: white;
+      height: 30px;
+  }
+  .row ul a:hover{
+      width: 150px;
+      border-radius: 25px;
+  }
+  /* boxes*/
+.container1box {
+          flex-basis: 33%;
+          margin-bottom: 10px;
+        }
+  .container1 div, .container2 div, .container3 div{
+    border :1px solid;
+    padding: 10px;
+  }
+    @media screen and (min-width: 760px){
+            body{
+              color: black;
+            }
+              
+        .container1, .container2 , .container3{
+          display: flex;
+          justify-content:space-between;
+    }
+    .box{
+      margin-left: 700px;
+      margin-top: -925px;
+    }         
+}
+.box img{
+  width: 100%;
+  height: 150px;  
+}
+  </style>
+</head>
+<body>
+  <header>
+    <section>
+      <article class="leftnav">
+        <div class="navbar navbar-fixed-left">
+            <ul class="nav navbar-nav">
+            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <span id="main_icon" class="glyphicon glyphicon-align-justify chat"></span>
+              </a>
+              <ul class="dropbtn dropdown-content" role="menu1">
+                <li><a href="#">Menu</a></li>
+              </ul></li>
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle"  data-toggle="dropdown">
+                <i class="fa fa-arrow-left fa-2x" aria-hidden="true"></i>
+                </a>
+                <ul class="dropbtn dropdown-content" role="menu2">
+                <li><a href="#" > Back</a>
+                     
+                    </li>
+              </ul></li>
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle"  data-toggle="dropdown">
+                <i class="material-icons">location_on</i>
+                </a>
+                <ul class="dropbtn dropdown-content" role="menu2">
+                <li><a href="#">NearBy</a></li>
+              </ul></li>
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle"  data-toggle="dropdown">
+                <i class="fa fa-star-o fa-2x" aria-hidden="true"></i>
+                </a>
+                <ul class="dropbtn dropdown-content" role="menu2">
+                <li><a href="#">Bookmarks</a></li>
+              </ul></li>
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle"  data-toggle="dropdown">
+                <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+                </a>
+                <ul class= "dropbtn dropdown-content" role="menu2">
+                <li><a href="#">Search</a></li>
+              </ul></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle"  data-toggle="dropdown">
+                <i class="fa fa-mobile fa-2x" aria-hidden="true"></i>
+                </a>
+                <ul class="dropbtn dropdown-content" role="menu2">
+                <li><a href="#">Apps</a></li>
+              </ul></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle"  data-toggle="dropdown">
+                <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+                </a>
+                <ul class="dropbtn dropdown-content" role="menu2">
+                <li><a href="#">Facebook</a></li>
+              </ul></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle"  data-toggle="dropdown">
+                <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                </a>
+                <ul class="dropbtn dropdown-content" role="menu2">
+                <li><a href="#">Twitter</a></li>
+              </ul></li>
+            </ul>
+        </div>
+        <!-- <div class="vertical-text"> 
+          <p>SF ARTS ORG</p>
+        </div> -->
+      </article>
+      <article class="imgcor">
+        <div class="container">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                    <img src="C:\Users\Kasi\Desktop\NewDesign\bootstrap\SFArts\art1.jpg">           
+                 </div><!-- End Item -->
+ 
+         <div class="item">
+          <img src="C:\Users\Kasi\Desktop\NewDesign\bootstrap\SFArts\art2.jpg" >           
+        </div><!-- End Item -->
+        
+        <div class="item">
+          <img src="C:\Users\Kasi\Desktop\NewDesign\bootstrap\SFArts\art3.jpg">           
+        </div><!-- End Item -->
+        
+        <div class="item">
+          <img src="C:\Users\Kasi\Desktop\NewDesign\bootstrap\SFArts\art4.jpg">           
+        </div><!-- End Item -->
+      </div><!-- End Carousel Inner -->
+    
+      <!-- Controls -->
+      <div id="first-slider">
+      <ol class="carousel-indicators">
+          <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example" data-slide-to="1"></li>
+          <li data-target="#carousel-example" data-slide-to="2"></li>
+          <li data-target="#carousel-example" data-slide-to="3"></li>
+      </ol>
+    </div>
+    <!-- End Carousel -->
+</div>
+      </article>
+      <article class="slider">
+        <div class="row">
+              <div class="col-sm-3">
+              <div class="sidebar-nav">
+                <div class="navbar navbar-default" role="navigation">
+                <div class="navbar-collapse collapse sidebar-navbar-collapse">
+                  <ul class="nav navbar-nav">
+                  <li ><a href="#">CalenderHighlights</a></li>
+                  <li ><a href="#">Current/Soon</a></li>
+                  <hr style="height: 1px">
+                  <li><a href="Children.html">Children</a></li>
+                  <hr style="height: 1px">
+                  <li><a href="Dance.html">Dance</a></li>
+                  <hr style="height: 1px">
+                  <li><a href="Festivels.html">Festivels</a></li>
+                  <hr style="height: 1px">
+                  <li><a href="Film.html">Film/Videos</a></li>
+                  <hr style="height: 1px">
+                  <li><a href="Galeries.html">Galeries</a></li>
+                  <hr style="height: 1px">
+                  <li class="active"><a href="Literary.html">Literary Arts</a></li>
+                  <hr style="height: 1px">
+                  <li><a href="More.html">MoreforLess</a></li>
+                  <hr style="height: 1px">
+                  <li><a href="Music.html">Music</a></li>
+                  <hr style="height: 1px">
+                  <li><a href="Museums.html">Museums</a></li>
+                  <hr style="height: 1px">
+                  <li><a href="SummerofLove.html">SummerofLove</a></li>
+                  <hr style="height: 1px">
+                  <li><a href="PublicofArt.html">PublicofArt</a></li>
+                  <hr style="height: 1px">
+                  <li><a href="Theatre">Theatre</a></li>
+                  </ul>
+              </div><!--/.nav-collapse -->
+              </div>
+            </div>
+            </div>
+            </div>
+      </article>
+      <article class="box">
+        <div class="container1">
+          <div class="container1box">
+            <img src="art9.jpg" >
+            <center><p>
+              The Arts and Crafts movement was an international movement in the decorative and fine arts that began in Britain and flourished in Europe and North America between about 1880 and 1920, emerging in Japan in the 1920s. 
+            </p></center>
+          </div>
+          <div class="container1box">
+            <img src="art7.jpg" >
+            <center><p>
+              The Arts and Crafts movement was an international movement in the decorative and fine arts that began in Britain and flourished in Europe and North America between about 1880 and 1920, emerging in Japan in the 1920s. 
+            </p></center>
+          </div>
+          <div class="container1box">
+            <img src="art5.png" >
+            <center><p>
+              The Arts and Crafts movement was an international movement in the decorative and fine arts that began in Britain and flourished in Europe and North America between about 1880 and 1920, emerging in Japan in the 1920s. 
+            </p></center>
+          </div>
+
+        </div>
+        <div class="container2">
+          <div class="container1box">
+            <img src="art3.jpg" >
+            <center><p>
+              The Arts and Crafts movement was an international movement in the decorative and fine arts that began in Britain and flourished in Europe and North America between about 1880 and 1920, emerging in Japan in the 1920s. 
+            </p></center>
+          </div>
+           <div class="container1box">
+            <img src="art8.jpg">
+            <center><p>
+              The Arts and Crafts movement was an international movement in the decorative and fine arts that began in Britain and flourished in Europe and North America between about 1880 and 1920, emerging in Japan in the 1920s. 
+            </p></center>
+          </div>
+          <div class="container1box">
+            <img src="arta.jpg">
+            <center><p>
+              The Arts and Crafts movement was an international movement in the decorative and fine arts that began in Britain and flourished in Europe and North America between about 1880 and 1920, emerging in Japan in the 1920s. 
+            </p></center>
+          </div>
+        </div>
+        <div class="container3">
+            <div class="container1box">
+            <img src="art2.jpg" >
+            <center><p>
+              The Arts and Crafts movement was an international movement in the decorative and fine arts that began in Britain and flourished in Europe and North America between about 1880 and 1920, emerging in Japan in the 1920s. 
+            </p></center>
+          </div>
+          <div class="container1box">
+            <img src="artc.jpg">
+            <center><p>
+              The Arts and Crafts movement was an international movement in the decorative and fine arts that began in Britain and flourished in Europe and North America between about 1880 and 1920, emerging in Japan in the 1920s. 
+            </p></center>
+          </div>
+          <div class="container1box">
+            <img src="arte.jpg">
+            <center><p>
+              The Arts and Crafts movement was an international movement in the decorative and fine arts that began in Britain and flourished in Europe and North America between about 1880 and 1920, emerging in Japan in the 1920s. 
+            </p></center>
+          </div>
+        </div>
+      </article>
+    </section>
+  </header>
+  <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>
